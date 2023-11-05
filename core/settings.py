@@ -40,9 +40,9 @@ INSTALLED_APPS = [
 
     # my apps
     'apps.courses',
-    'apps.assignments',
-    'apps.students',
     'apps.accounts',
+    'apps.groups',
+    'apps.results',
 
     # third party
     'rest_framework',

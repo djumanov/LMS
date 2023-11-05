@@ -3,9 +3,7 @@ from . import models
 
 
 for_register = (
-    models.Teacher,
-    models.Student,
-    models.Parent,
+    models.Group,
 )
 
 admin.site.register(for_register)
