@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'apps.accounts',
     'apps.groups',
     'apps.results',
+    'apps.payments',
 
     # third party
     'rest_framework',
