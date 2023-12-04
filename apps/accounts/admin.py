@@ -1,11 +1,14 @@
 from django.contrib import admin
-from . import models
+from .models import Teacher, Student, Parent
 
 
-for_register = (
-    models.Teacher,
-    models.Student,
-    models.Parent,
-)
+@admin.register(Teacher)
+class TeacherAdmin(admin.ModelAdmin):
+    list_display = ('first_name', 'last_name', 'phone')
+    search_fields = ('first_name__icontains',  'last_name__icontains')
 
-admin.site.register(for_register)
+
+@admin.register(Student)
+class StudentAdmin(admin.ModelAdmin):
+    list_display = ('first_name', 'last_name', 'phone')
+    search_fields = ('first_name__icontains',  'last_name__icontains')
