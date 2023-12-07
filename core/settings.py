@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'apps.groups',
     'apps.results',
     'apps.payments',
+    'apps.codewars',
 
     # third party
     'rest_framework',
